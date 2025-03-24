@@ -1,40 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <!-- About Section -->
+    <!-- Home (Introduction) Section -->
+    <section id="home">
+        <h1>Your Name</h1>
+        <p>Short Bio: A brief introduction to who you are, your professional background, and what drives you.</p>
+        <img src="images/profile.jpg" alt="Profile Picture" class="profile-image">
+        <p>Contact Info: email@example.com</p>
+    </section>
+
+    <!-- About Me Section -->
     <section id="about">
         <h2>About Me</h2>
-        <!-- Profile Image -->
-        <img src="images/profile.jpg" alt="Profile Picture" class="profile-image">
         <p>Background: Detail your educational background, career journey, and any notable experiences.</p>
         <p>Your Passion: What excites you about your work? Share your motivations.</p>
         <p>Professional Statement: A few sentences summarizing your approach to your work.</p>
     </section>
 
-    <!-- Resume Section -->
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div>
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>Python, JavaScript, React, Git, SQL, AWS</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Communication, Leadership, Teamwork, Problem-solving</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div>
+            <h3>Job Title</h3>
+            <p>Company Name - Duration</p>
+            <p>Key Responsibilities and Achievements.</p>
+            <p>Tools and Technologies used: Python, React, etc.</p>
+        </div>
+        <div>
+            <h3>Project Title</h3>
+            <p>Description of the project.</p>
+            <p>Technologies used: HTML, CSS, JavaScript</p>
+            <p>Role: Your role and contributions</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div>
+            <h3>Project Title</h3>
+            <p>Description: What was the project about? What problem did it solve?</p>
+            <p>Technologies Used: HTML, CSS, JavaScript</p>
+            <a href="project-link">View Project</a>
+        </div>
+    </section>
+
+    <!-- Resume/CV Section -->
     <section id="resume">
         <h2>Resume</h2>
         <a href="docs/resume.pdf" target="_blank" download>Download Resume</a>
+    </section>
+
+    <!-- Testimonials Section (Optional) -->
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <p>"Testimonial from a client or colleague." - Person's Name</p>
     </section>
 
     <!-- Contact Section -->
@@ -43,9 +101,14 @@
         <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
         <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">LinkedIn Profile</a></p>
         <p>GitHub: <a href="https://github.com/yourprofile">GitHub Profile</a></p>
+        <form action="submit_form.php" method="POST">
+            <label for="message">Leave a Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
     <script src="script.js"></script>
 </body>
-</html>
 
+</html>
